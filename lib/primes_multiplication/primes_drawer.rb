@@ -7,11 +7,6 @@ class PrimesDrawer
   end
 
   def draw_table(primes_array)
-    if primes_array.length < Prime::MIN_SIZE || primes_array.length > Prime::MAX_SIZE
-      puts "Please set the size within the following range: #{Prime::MIN_SIZE} >= X <= #{Prime::MAX_SIZE}"
-      exit
-    end
-
     @table.headings = [""] + primes_array
     
     # 1. Build table rows

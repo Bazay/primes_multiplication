@@ -7,8 +7,8 @@ class Prime
   MIN_SIZE = 5
   MAX_SIZE = 30
 
-  def initialize
-    @options = {}
+  def initialize(args={})
+    @options = args
 
     OptionParser.new do |opts|
       opts.banner = "Primes Multiplication Table by Baron Bloomer"
@@ -33,7 +33,10 @@ class Prime
   def valid?
     if @options[:table].nil?
       puts "Not a valid option. --help or -h for usage information."
-      exit!
+      exit
+    elsif @options[:table] < Prime::MIN_SIZE || @options[:table] > Prime::MAX_SIZE
+      puts "Please set the size within the following range: #{Prime::MIN_SIZE} >= X <= #{Prime::MAX_SIZE}"
+      exit
     end
   end
 
