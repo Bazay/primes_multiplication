@@ -1,41 +1,28 @@
 # PrimesMultiplication
+Created by Baron Bloomer for purpose of assessment by Funding Circle.
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/primes_multiplication`. To experiment with that code, run `bin/console` for an interactive prompt.
+Task:
+Write a program that prints a multiplication table of primes numbers.
+The program should take an argument from the command line that specifies the amount of prime
+numbers to generate and print out a multiplication table for these prime numbers.
 
-TODO: Delete this and the text above, and describe your gem
+An example of the way the application may run:
+<executable_script_name> ­­count 10
 
-## Installation
+Notes:
+1. Consider code readability/complexity
+2. Consider SOLID principles, but do not over­engineer
+3. Consider extensibility
+4. Feel free to use any library, except in the case of prime number generation
+5. Consider how you can prove the correctness of your application
+6. Write it in Ruby
 
-Add this line to your application's Gemfile:
+Usage:
+From the root directory,
 
-```ruby
-gem 'primes_multiplication'
-```
+    run `ruby primes_multiplication --table X` where X in the range: 5 >= X <= 25.
 
-And then execute:
+Tests:
+From the root directory,
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install primes_multiplication
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake rspec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/primes_multiplication.
-
-
-## License
-
-The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
+    run `rspec spec/` to run all tests.
