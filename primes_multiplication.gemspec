@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'primes_multiplication/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "Primes Multiplication Table Generator"
+  spec.name          = "primes_multiplication_table_generator"
   spec.version       = PrimesMultiplication::VERSION
   spec.authors       = ["Baron"]
   spec.email         = ["baronbloomer@gmail.com"]
@@ -34,6 +34,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.10"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec"
+  spec.add_development_dependency "pry"
+
 
   # Usage: spec.add_runtime_dependency "[gem name]", [[version]]
   spec.add_runtime_dependency "terminal-table", ["1.5.2"]

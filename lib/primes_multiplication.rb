@@ -1,8 +1,3 @@
-require 'optparse'
+require_relative 'primes_multiplication/prime'
 
-module PrimesMultiplication
-  # Your code goes here...
-  #PrimeNumbersCalculate
-  #PrimeNumbersMultiply
-  #DrawTable
-end
+Prime.new.run
